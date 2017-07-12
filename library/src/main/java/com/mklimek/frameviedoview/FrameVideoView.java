@@ -106,6 +106,15 @@ public class FrameVideoView extends FrameLayout {
         impl.onPause();
     }
 
+    public void onDestroy() {
+        removeAllViews();
+        impl = null;
+        implType = null;
+        placeholderView = null;
+        videoUri = null;
+        context = null;
+    }
+
     public ImplType getImplType() {
         return implType;
     }
