@@ -12,9 +12,6 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 public class FrameVideoView extends FrameLayout {
 
     private Impl impl;
@@ -22,8 +19,6 @@ public class FrameVideoView extends FrameLayout {
     private View placeholderView;
     private Uri videoUri;
     private Context context;
-
-    private static final Logger LOG = LoggerFactory.getLogger(FrameVideoView.class.getSimpleName());
 
     public FrameVideoView(Context context) {
         super(context);
